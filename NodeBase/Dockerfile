@@ -82,6 +82,7 @@ USER seluser
 COPY entry_point.sh \
   functions.sh \
     /opt/bin/
+RUN sudo chmod 777 /opt/bin/entry_point.sh /opt/bin/functions.sh
 
 #============================
 # Some configuration options
