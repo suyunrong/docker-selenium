@@ -2,7 +2,7 @@
 # NOTE: DO *NOT* EDIT THIS FILE.  IT IS GENERATED.
 # PLEASE UPDATE Dockerfile.txt INSTEAD OF THIS FILE
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-FROM suyunrong/selenium-node-chrome:latest
+FROM suyunrong/selenium-node-chrome:48.0.2564.109
 LABEL authors=suyunrong
 
 USER root
@@ -37,6 +37,6 @@ RUN mkdir -p ~/.vnc \
 #==============================
 # Scripts to run Selenium Node
 #==============================
-#COPY entry_point.sh /opt/bin/entry_point.sh
+COPY entry_point.sh /opt/bin/entry_point.sh
 
 EXPOSE 5900
