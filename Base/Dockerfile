@@ -32,7 +32,7 @@ RUN apt-get -qqy update \
 # Timezone settings
 # Possible alternative: https://github.com/docker/docker/issues/3359#issuecomment-32150214
 #===================
-ENV TZ "UTC"
+ENV TZ "Asia/Shanghai"
 RUN echo "${TZ}" > /etc/timezone \
   && dpkg-reconfigure --frontend noninteractive tzdata
 
